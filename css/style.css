@@ -15,21 +15,26 @@ section {
 }
 
 nav {
-    border:3px solid hsla(119, 100%, 9%, 0.678);
+    border: 3px solid hsla(119, 100%, 9%, 0.678);
     font-size: 20px;
-    font-weight:bold;
-    font-family:'Calibri';
+    font-weight: bold;
+    font-family: 'Calibri';
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:hsl(0, 0%, 13%);
+    background-color: hsl(0, 0%, 13%);
 }
 
 nav li {
     float: left;
+}
+
+nav li#active {
+    background-color: hsla(119, 100%, 9%, 0.678);
 }
 
 nav li a {
@@ -40,6 +45,10 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover {
-background-color: #1a1a1a;
+nav li:hover {
+    background-color: hsl(0, 0%, 15%);
+}
+
+nav li#active:hover {
+    background-color: hsl(119, 100%, 10%);
 }
