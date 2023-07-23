@@ -6,10 +6,17 @@
 
 body { /*Entire page*/
     background-color: rgb(24, 24, 24);
+    font-size: 1.25vw;
 }
 
-h1, p { /*Defaults for text color/fonts*/
+h1 { /*Defaults for text color/fonts*/
     color: white;
+    font-family: Georgia, serif;
+}
+
+p{
+    color: white;
+    font-family: Verdana, sans-serif;
 }
 
 header{
@@ -21,33 +28,16 @@ section {
     font-size: larger;
 }
 
-#aboutme {
-    margin:10px 0px 0px 25%;
-}
-
-#aboutme p, h1{
-    margin:0px 20px;
-    padding:10px 0px;
-    line-height: 30px;
-}
-
-#aboutme hr{
-    margin: 0px 10px;
-}
-
 nav {
     background-color: hsl(0, 0%, 13%);
     border-bottom: 5px solid hsla(119, 100%, 9%, 0.678);
     margin-bottom:10px;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Calibri';
 }
 
 nav ul {
     list-style-type: none;
-    margin-bottom: 0px;
-    padding: 0px;
     overflow: hidden;
 }
 
