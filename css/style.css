@@ -64,3 +64,7 @@ nav li:hover {
 nav li#active:hover {
     background-color: hsl(119, 100%, 10%);
 }
+
+nav span.material-icons {
+    vertical-align: sub;
+}
