@@ -5,16 +5,36 @@
     <meta charset="UTF-8">
     <meta name="author" content="Jack Bogart">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Page Three</title>
     <style>
-        body {
-            background-image: url("images/nycskyline.jpg");
-            background-repeat: no-repeat;
-            background-position: 50% -100%;
-            background-size: cover;
-            background-attachment:fixed;
+        section{
+            height:5000px;
+            max-width:2530px;
+            margin:auto;
+            box-sizing: border-box;
+            color: white;
+            font-size: 20px;
+        }
+        #contactform{
+            position:relative;
+            top:0px;
+        }
+        #formcontent{
+            line-height: 28px;
+            padding:10px;
+            position:absolute;
+            top:0px;
+            max-width: 200px;
+            z-index:1;
+        }
+        img{
+            position: absolute;
+            top:0px;
+            z-index:0;
+            width:200px;
+            height:175px;
         }
     </style>
 </head>
@@ -31,7 +51,18 @@
         </ul>
     </nav>
     <section>
-        <p>Page three WIP</p>
+        <div id="contactform">
+        <form id="formcontent">
+            <p>Enter Form:</p>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <input type="submit">
+        </form>
+        <img src= "images/cherryblossom.png", alt="cherryblossom">
+    </div>
     </section>
 </body>
+
 </html>
