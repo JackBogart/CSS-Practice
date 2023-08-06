@@ -10,10 +10,10 @@
     <title>Home Page</title>
     <style>
         #aboutme {
+            margin:0px 10px;
+            overflow: auto;
             font-size:20px;
-            margin-left: 25%;
             height: 1000px;
-            box-sizing: border-box;
         }
 
         #aboutme h1 {
@@ -30,6 +30,30 @@
         #aboutme hr {
             margin: 0px 10px;
         }
+
+        #sidebar{
+            margin:0px 10px;
+            float:left;
+            margin-left:5px;
+            width:275px;
+            height:1000px;
+        }
+
+        #sidebar p{
+            color:white;
+            text-align:center;
+            font-size: 14px;
+        }
+
+        #sidebar img{
+            display:block;
+            margin: 10px auto;
+            opacity: 0.5;
+        }
+
+        #sidebar img:hover{
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -41,9 +65,13 @@
         <ul>
             <li id="active"><a href="pageOne.html"><span class="material-icons">home</span> Home</a></li>
             <li><a href="pageTwo.html"><span class="material-icons">person</span> About</a></li>
-            <li><a href="pageThree.html"><span class="material-icons">mail</span> Contact</a></li>
+            <li class="dropdown"><a href="pageThree.html"><span class="material-icons">mail</span> Contact</a><div class="dropdown-content"><a href="#">Link 1</a><a href="#">Link 2</a></div></li>
         </ul>
     </nav>
+    <section id="sidebar">
+        <img src="images/nycskyline.jpg" alt="nycskyline" height="150px" width="250px">
+        <p><cite><abbr title="New York City">NYC</abbr> skyline</cite></p>
+    </section>
     <section id="aboutme">
         <h1>About Me</h1>
         <p>My name is Jack Bogart, and I am currently a senior at Rutgers University pursuing a degree in

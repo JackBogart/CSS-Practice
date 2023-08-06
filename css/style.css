@@ -34,6 +34,7 @@ nav {
     margin-bottom:10px;
     font-size: 20px;
     font-weight: bold;
+    position: -webkit-sticky; /* Safari */
     position:sticky;
     top:0;
     z-index:2;
@@ -53,9 +54,9 @@ nav li#active {
 }
 
 nav li a {
+    text-align: center;
     display: block;
     color: white;
-    text-align: center;
     padding:8px 30px;
     text-decoration: none;
 }
@@ -71,3 +72,14 @@ nav li#active:hover {
 nav span.material-icons {
     vertical-align: sub;
 }
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: inherit;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
